@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "ECP5 DEV BOARD"
+Date "2020-10-04"
+Rev "0.1"
+Comp "Rajesh Medhyal"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ecp5-dev-board-rescue:IS66WVH16M8BLL-100B1LI-raj_kicad U7
+U 1 1 5FB369FF
+P 4950 2700
+F 0 "U7" H 5100 3400 98  0000 C CNN
+F 1 "IS66WVH16M8BLL-100B1LI" H 5000 1550 98  0000 C CNN
+F 2 "raj:24-TFBGA (6x8)" H 4900 2700 98  0001 C CNN
+F 3 "" H 4900 2700 98  0001 C CNN
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5FB38935
+P 4400 2900
+F 0 "#PWR0154" H 4400 2650 50  0001 C CNN
+F 1 "GND" H 4405 2727 50  0000 C CNN
+F 2 "" H 4400 2900 50  0001 C CNN
+F 3 "" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0155
+U 1 1 5FB3A0FE
+P 3750 2150
+F 0 "#PWR0155" H 3750 2000 50  0001 C CNN
+F 1 "+3.3V" H 3765 2323 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2600 4400 2600
+Wire Wire Line
+	4400 2600 4400 2750
+Wire Wire Line
+	4550 2750 4400 2750
+Connection ~ 4400 2750
+Wire Wire Line
+	4400 2750 4400 2850
+Wire Wire Line
+	4550 2850 4400 2850
+Connection ~ 4400 2850
+Wire Wire Line
+	4400 2850 4400 2900
+NoConn ~ 4550 3050
+NoConn ~ 4550 3150
+NoConn ~ 4550 3250
+NoConn ~ 4550 3350
+NoConn ~ 4550 3450
+NoConn ~ 4550 3550
+$Comp
+L Device:C_Small C33
+U 1 1 5FB3DA8C
+P 3750 2350
+F 0 "C33" H 3842 2396 50  0000 L CNN
+F 1 "10uF" H 3550 2300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3750 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5FB3E263
+P 4000 2350
+F 0 "C34" H 4092 2396 50  0000 L CNN
+F 1 "100nF" H 3800 2300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4000 2350 50  0001 C CNN
+F 3 "~" H 4000 2350 50  0001 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C35
+U 1 1 5FB3E54A
+P 4250 2350
+F 0 "C35" H 4342 2396 50  0000 L CNN
+F 1 "100nF" H 4050 2300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4250 2350 50  0001 C CNN
+F 3 "~" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2250 3750 2200
+Connection ~ 3750 2200
+Wire Wire Line
+	3750 2200 3750 2150
+Wire Wire Line
+	4000 2250 4000 2200
+Connection ~ 4000 2200
+Wire Wire Line
+	4000 2200 3750 2200
+Wire Wire Line
+	4250 2250 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 4000 2200
+Wire Wire Line
+	3750 2450 3750 2500
+Wire Wire Line
+	3750 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 2450
+Connection ~ 3750 2500
+Wire Wire Line
+	3750 2500 3750 2550
+Wire Wire Line
+	4000 2500 4250 2500
+Wire Wire Line
+	4250 2500 4250 2450
+Connection ~ 4000 2500
+$Comp
+L power:GND #PWR0156
+U 1 1 5FB40053
+P 3750 2550
+F 0 "#PWR0156" H 3750 2300 50  0001 C CNN
+F 1 "GND" H 3755 2377 50  0000 C CNN
+F 2 "" H 3750 2550 50  0001 C CNN
+F 3 "" H 3750 2550 50  0001 C CNN
+	1    3750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2200 4450 2200
+Wire Wire Line
+	4550 2350 4450 2350
+Wire Wire Line
+	4450 2350 4450 2200
+Connection ~ 4450 2200
+Wire Wire Line
+	4450 2200 4250 2200
+Wire Wire Line
+	4550 2450 4450 2450
+Wire Wire Line
+	4450 2450 4450 2350
+Connection ~ 4450 2350
+Text GLabel 5500 2200 2    50   Input ~ 0
+HYP_CS
+Text GLabel 5500 2350 2    50   Input ~ 0
+HYP_RESET
+Text GLabel 5500 2500 2    50   Input ~ 0
+HYP_CK
+Text GLabel 5500 2650 2    50   Input ~ 0
+HYP_RWDS
+Text GLabel 5500 2850 2    50   Input ~ 0
+HYP_DQ0
+Text GLabel 5500 2950 2    50   Input ~ 0
+HYP_DQ1
+Text GLabel 5500 3050 2    50   Input ~ 0
+HYP_DQ2
+Text GLabel 5500 3150 2    50   Input ~ 0
+HYP_DQ3
+Text GLabel 5500 3250 2    50   Input ~ 0
+HYP_DQ4
+Text GLabel 5500 3350 2    50   Input ~ 0
+HYP_DQ5
+Text GLabel 5500 3450 2    50   Input ~ 0
+HYP_DQ6
+Text GLabel 5500 3550 2    50   Input ~ 0
+HYP_DQ7
+Wire Wire Line
+	5350 2200 5500 2200
+Wire Wire Line
+	5350 2350 5500 2350
+Wire Wire Line
+	5350 2500 5500 2500
+Wire Wire Line
+	5350 2650 5500 2650
+Wire Wire Line
+	5350 2850 5500 2850
+Wire Wire Line
+	5350 2950 5500 2950
+Wire Wire Line
+	5350 3050 5500 3050
+Wire Wire Line
+	5350 3250 5500 3250
+Wire Wire Line
+	5350 3150 5500 3150
+Wire Wire Line
+	5350 3350 5500 3350
+Wire Wire Line
+	5350 3450 5500 3450
+Wire Wire Line
+	5350 3550 5500 3550
+$EndSCHEMATC
